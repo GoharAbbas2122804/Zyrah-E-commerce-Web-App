@@ -152,7 +152,7 @@ export default function SmokeyBackground({
     const iMouseLocation = gl.getUniformLocation(program, 'iMouse');
     const uColorLocation = gl.getUniformLocation(program, 'u_color');
 
-    let startTime = Date.now();
+    const startTime = Date.now();
     const [r, g, b] = hexToRgb(color);
     gl.uniform3f(uColorLocation, r, g, b);
 

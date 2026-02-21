@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useForm } from 'react-hook-form';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
 const PaymentForm = () => {
   const {
@@ -16,14 +16,17 @@ const PaymentForm = () => {
 
   const router = useRouter();
 
-//   const handlePaymentForm: SubmitHandler<PaymentFormInputs> = (data) => {
-    
-//   };
+  const handlePaymentForm: SubmitHandler<PaymentFormInputs> = (data) => {
+    console.log('Payment data:', data);
+    // TODO: Implement actual payment processing
+    alert('Payment submitted successfully!');
+    router.push('/');
+  };
 
   return (
     <form
       className="flex flex-col gap-4"
-    //   onSubmit={handleSubmit(handlePaymentForm)}
+      onSubmit={handleSubmit(handlePaymentForm)}
     >
       <div className="flex flex-col gap-1">
         <label htmlFor="cardHolder" className="text-xs text-gray-500 font-medium">

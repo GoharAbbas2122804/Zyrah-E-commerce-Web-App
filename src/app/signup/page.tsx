@@ -1,16 +1,16 @@
 "use client";
 
 import SmokeyBackground from '@/components/SmokeyBackground';
-import LoginForm from '@/components/LoginForm';
+import SignUpForm from '@/components/SignUpForm';
 
 /**
- * A glassmorphism-style login page component with animated labels and Google login.
+ * Signup page component with glassmorphism background.
  */
-export default function LoginPage() {
+export default function SignUpPage() {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center p-4">
       <SmokeyBackground />
-      <LoginForm />
+      <SignUpForm />
     </div>
   );
 }
