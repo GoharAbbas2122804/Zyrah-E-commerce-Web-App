@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SearchBar from "./SearchBar";
-import { Bell, Home, ShoppingCart, LogIn } from "lucide-react";
+import { Bell, Home, LogIn } from "lucide-react";
 import ShoppingCartIcon from "./ShoppingCartIcon";
 import { cva } from "class-variance-authority";
 import { cn } from '@/lib/utils';

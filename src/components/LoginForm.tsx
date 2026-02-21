@@ -1,6 +1,6 @@
 'use client';
 
-import { User, Lock, ArrowRight, Mail } from 'lucide-react';
+import { User, Lock, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function LoginForm() {

@@ -11,7 +11,6 @@ const Filter = () => {
     const searchParams = useSearchParams();
       const router = useRouter();
       const pathName = usePathname();
-      const sort = searchParams.get("sort");
       
       const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const params = new URLSearchParams(searchParams);

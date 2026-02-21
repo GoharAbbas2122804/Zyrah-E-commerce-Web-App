@@ -2,7 +2,6 @@
 import useCartStore from '@/stores/cartStore';
 import { ProductType } from '@/types'
 import { Minus, Plus, ShoppingCart } from 'lucide-react';
-import { Preahvihear } from 'next/font/google';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
