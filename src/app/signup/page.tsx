@@ -8,9 +8,11 @@ import SignUpForm from '@/components/SignUpForm';
  */
 export default function SignUpPage() {
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center p-4">
+    <div className="relative min-h-screen w-screen overflow-hidden">
       <SmokeyBackground />
-      <SignUpForm />
+      <div className="relative z-10 min-h-screen w-full flex items-center justify-center p-4">
+        <SignUpForm />
+      </div>
     </div>
   );
 }
