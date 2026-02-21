@@ -25,7 +25,7 @@ export const generateMetadata = async ({
 }: {
   params: Promise<{ id: string }>;
 }) => {
-  const { id } = await params;
+  await params;
   // TODO:get the product from db
   // TEMPORARY
   return {
@@ -35,10 +35,8 @@ export const generateMetadata = async ({
 };
 
 const ProductPage = async ({
-  params,
   searchParams,
 }: {
-  params: Promise<{ id: string }>;
   searchParams: Promise<{ color: string; size: string }>;
 }) => {
   const { size, color } = await searchParams;
