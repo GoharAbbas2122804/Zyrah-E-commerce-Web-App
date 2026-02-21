@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function LoginForm() {
   return (
-    <div className="w-full max-w-sm sm:max-w-md md:max-w-lg p-6 sm:p-8 space-y-6 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 shadow-2xl z-10">
+    <div className="w-full max-w-md p-6 sm:p-8 space-y-6 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 shadow-2xl z-10">
       <div className="text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-white">Welcome Back</h2>
         <p className="mt-2 text-sm text-gray-300">Sign in to continue</p>
