@@ -200,7 +200,7 @@ export default function SmokeyBackground({
   const finalBlurClass = blurClassMap[backdropBlurAmount as BlurSize] || blurClassMap['sm'];
 
   return (
-    <div className={`absolute inset-0 w-full h-full overflow-hidden ${className}`}>
+    <div className={`fixed inset-0 w-screen h-screen overflow-hidden ${className}`}>
       <canvas ref={canvasRef} className="w-full h-full" />
       <div className={`absolute inset-0 ${finalBlurClass}`}></div>
     </div>
