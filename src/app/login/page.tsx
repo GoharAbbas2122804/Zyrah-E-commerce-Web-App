@@ -8,9 +8,9 @@ import LoginForm from "@/components/LoginForm";
  */
 export default function LoginPage() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="fixed inset-0 z-10 w-screen h-screen overflow-hidden">
       <SmokeyBackground />
-      <div className="relative z-10 min-h-screen w-full flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="relative z-20 h-full w-full flex items-center justify-center p-4 sm:p-6 md:p-8">
         <LoginForm />
       </div>
     </div>
